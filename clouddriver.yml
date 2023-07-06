@@ -1,0 +1,24 @@
+kubernetes:
+  enabled: true
+  accounts:
+  - name: my-k8s
+    requiredGroupMembership: []
+    permissions: {}
+    dockerRegistries: []
+    providerVersion: V2
+    context: kubernetes-admin@kubernetes
+    configureImagePullSecrets: true
+    cacheThreads: 1
+    namespaces: []
+    omitNamespaces: []
+    kinds: []
+    omitKinds: []
+    customResources: []
+    cachingPolicies: []
+    kubeconfigFile: configserver:kubecfg-test.yaml
+    rawResourcesEndpointConfig:
+      kindExpressions: []
+      omitKindExpressions: []
+    oAuthScopes: []
+    onlySpinnakerManaged: false
+  primaryAccount: my-k8s
